@@ -1,0 +1,154 @@
+object frmCepResolver: TfrmCepResolver
+  Left = 256
+  Height = 326
+  Top = 109
+  Width = 454
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'frmCepResolver'
+  ClientHeight = 326
+  ClientWidth = 454
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object panHeader: TPanel
+    Left = 0
+    Height = 81
+    Top = 0
+    Width = 454
+    Align = alTop
+    BevelInner = bvSpace
+    ClientHeight = 81
+    ClientWidth = 454
+    ParentBackground = False
+    TabOrder = 0
+    object labCep: TLabel
+      Left = 10
+      Height = 15
+      Top = 15
+      Width = 24
+      Caption = 'CEP:'
+    end
+    object btnBuscarCep: TButton
+      Left = 263
+      Height = 66
+      Top = 9
+      Width = 172
+      Caption = 'Buscar CEP'
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Segoe UI'
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnBuscarCepClick
+    end
+    object rdgApi: TRadioGroup
+      Left = 10
+      Height = 42
+      Top = 33
+      Width = 247
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 2
+      ClientHeight = 22
+      ClientWidth = 243
+      Columns = 2
+      ItemIndex = 0
+      Items.Strings = (
+        'Via Cep'
+        'Open Cep'
+      )
+      TabOrder = 1
+    end
+    object edtCep: TEdit
+      Left = 40
+      Height = 23
+      Top = 12
+      Width = 217
+      TabOrder = 2
+    end
+  end
+  object panBody: TPanel
+    Left = 0
+    Height = 245
+    Top = 81
+    Width = 454
+    Align = alClient
+    ClientHeight = 245
+    ClientWidth = 454
+    TabOrder = 1
+    object edtLogradouro: TLabeledEdit
+      Left = 10
+      Height = 23
+      Top = 27
+      Width = 425
+      Color = clBtnFace
+      EditLabel.Height = 15
+      EditLabel.Width = 425
+      EditLabel.Caption = 'Logradouro'
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edtBairro: TLabeledEdit
+      Left = 10
+      Height = 23
+      Top = 75
+      Width = 425
+      Color = clBtnFace
+      EditLabel.Height = 15
+      EditLabel.Width = 425
+      EditLabel.Caption = 'Bairro'
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object edtComplemento: TLabeledEdit
+      Left = 10
+      Height = 23
+      Top = 122
+      Width = 425
+      Color = clBtnFace
+      EditLabel.Height = 15
+      EditLabel.Width = 425
+      EditLabel.Caption = 'Complemento'
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object edtCidade: TLabeledEdit
+      Left = 10
+      Height = 23
+      Top = 167
+      Width = 371
+      Color = clBtnFace
+      EditLabel.Height = 15
+      EditLabel.Width = 371
+      EditLabel.Caption = 'Cidade'
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object edtUf: TEdit
+      Left = 392
+      Height = 23
+      Top = 167
+      Width = 43
+      Color = clBtnFace
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object edtIbge: TLabeledEdit
+      Left = 10
+      Height = 23
+      Top = 212
+      Width = 425
+      Color = clBtnFace
+      EditLabel.Height = 15
+      EditLabel.Width = 425
+      EditLabel.Caption = 'Ibge'
+      ReadOnly = True
+      TabOrder = 5
+    end
+  end
+end
